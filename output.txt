@@ -1,0 +1,72 @@
+=== UNIT 2: STACKS AND QUEUES ===
+
+=== STACK DEMO ===
+TODO: Create a Stack object, demonstrate LIFO behavior,
+      test popping from an empty stack,
+      test peeking at an empty stack,
+      and verify a single-item stack becomes empty after removal.
+Adding Bourbon to the bottle rack...
+Adding Gin to the bottle rack...
+Adding Tequila to the bottle rack...
+Adding Vodka to the bottle rack...
+
+--- Demonstrating LIFO sequence ---
+Removing Vodka from the rack (LIFO).
+Removing Tequila from the rack (LIFO).
+Removing Gin from the rack (LIFO).
+Removing Bourbon from the rack (LIFO).
+
+--- Testing Edge Cases ---
+Testing pop() on empty stack:
+Error: The bottle rack is empty!
+Testing peek() on empty stack:
+Error: Cannot peek; the rack is empty!
+
+Testing single-item stack persistence:
+Adding Single Malt to the bottle rack...
+Removing Single Malt from the rack (LIFO).
+Is stack empty now? True
+
+==============================
+
+
+=== QUEUE DEMO ===
+TODO: Create a Queue object, demonstrate FIFO behavior,
+      test dequeuing from an empty queue,
+      test viewing the front of an empty queue,
+      and verify a single-item queue becomes empty after removal.
+Ordering Bourbon... adding to the tasting line.
+Ordering Gin... adding to the tasting line.
+Ordering Tequila... adding to the tasting line.
+Ordering Vodka... adding to the tasting line.
+
+--- Demonstrating FIFO sequence ---
+Serving Bourbon (FIFO).
+Serving Gin (FIFO).
+Serving Tequila (FIFO).
+Serving Vodka (FIFO).
+
+--- Testing Edge Cases ---
+Testing dequeue() on empty queue:
+Error: No orders in the queue!
+Testing front() on empty queue:
+Error: No order at the front of the line!
+
+Testing single-item queue persistence:
+Ordering Single Gin... adding to the tasting line.
+Serving Single Gin (FIFO).
+Is queue empty now? True
+
+==============================
+
+--- Real-World Scenario: Spirit Cellar Management ---
+Adding Aged Bourbon to the bottle rack...
+Adding Reserve Vodka to the bottle rack...
+Ordering Gin shipment #1... adding to the tasting line.
+Ordering Tequila shipment #2... adding to the tasting line.
+
+Executing FIFO: Shipping the oldest order first...
+Serving Gin shipment #1 (FIFO).
+
+Executing LIFO: Retrieving the last crate added to storage...
+Removing Reserve Vodka from the rack (LIFO).
